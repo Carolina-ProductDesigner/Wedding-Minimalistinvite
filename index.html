@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camila & Romina — 03.09.2024</title>
+  <link rel="stylesheet" href="src/styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- INTRO SCREEN -->
+  <div id="intro" class="intro">
+    <div class="intro__content">
+      <p class="intro__subtitle">Para siempre</p>
+      <h1 class="intro__title">
+        <span class="typewriter" id="typewriter"></span>
+      </h1>
+      <p class="intro__date">03 · 09 · 2024</p>
+      <button class="intro__enter" id="enterBtn" onclick="enterSite()">Entrar</button>
+    </div>
+  </div>
+
+  <!-- MAIN SITE -->
+  <div id="mainSite" class="main-site hidden">
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+      <div class="nav__logo">C & R</div>
+      <div class="nav__links">
+        <button class="nav__link active" data-section="0">Nuestra Historia</button>
+        <button class="nav__link" data-section="1">Eventos</button>
+        <button class="nav__link" data-section="2">Hospedaje</button>
+        <button class="nav__link" data-section="3">Mesa de Regalos</button>
+        <button class="nav__link" data-section="4">Confirmar Asistencia</button>
+      </div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-menu__link" data-section="0">Nuestra Historia</button>
+      <button class="mobile-menu__link" data-section="1">Eventos</button>
+      <button class="mobile-menu__link" data-section="2">Hospedaje</button>
+      <button class="mobile-menu__link" data-section="3">Mesa de Regalos</button>
+      <button class="mobile-menu__link" data-section="4">Confirmar Asistencia</button>
+    </div>
+
+    <!-- SECTIONS WRAPPER -->
+    <div class="sections-wrapper" id="sectionsWrapper">
+
+      <!-- SECTION 0: NUESTRA HISTORIA -->
+      <section class="section section--historia" id="section-0">
+        <div class="parallax-bg" style="background-image: url('src/assets/hero.jpg')"></div>
+        <div class="section__overlay"></div>
+        <div class="section__content animate-in">
+          <div class="historia__grid">
+            <div class="historia__image-block">
+              <div class="historia__img-wrap parallax-element" data-speed="0.3">
+                <img src="src/assets/photo1.jpg" alt="Camila & Romina" class="historia__img" />
+              </div>
+            </div>
+            <div class="historia__text-block">
+              <p class="historia__label">Para siempre</p>
+              <h2 class="historia__names">Camila<br />&amp; Romina</h2>
+              <div class="historia__save">
+                <p class="save-label">Save the Date</p>
+                <p class="save-date">03 09 2024</p>
+              </div>
+              <div class="historia__divider"></div>
+              <h3 class="historia__sub">Nuestra Historia</h3>
+              <p class="historia__body">
+                Para siempre comenzó en una tarde cualquiera. Camila y Romina se encontraron sin buscarse, se eligieron sin dudarlo y construyeron juntas algo que ninguna de las dos sabía que le faltaba. Hoy, con el corazón lleno y los ojos hacia adelante, celebran ese amor que las define.
+              </p>
+            </div>
+            <div class="historia__image-block historia__image-block--right">
+              <div class="historia__img-wrap parallax-element" data-speed="0.2">
+                <img src="src/assets/photo2.jpg" alt="Camila & Romina" class="historia__img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 1: EVENTOS -->
+      <section class="section section--eventos" id="section-1">
+        <div class="section__content animate-in">
+          <h2 class="section__title">Eventos</h2>
+          <div class="eventos__grid">
+
+            <div class="evento__card">
+              <p class="evento__date">02 septiembre 2024 · 8:00pm</p>
+              <h3 class="evento__name">Rompehielos</h3>
+              <div class="evento__place">
+                <p class="evento__venue">Marmota</p>
+                <p class="evento__address">Calle Lorem ipsum, Colonia, Ciudad de México, CDMX, 00000</p>
+              </div>
+              <div class="evento__actions">
+                <a href="#" class="btn btn--outline">Ver Dirección</a>
+                <a href="#" class="btn btn--ghost">Guardar en Notas</a>
+              </div>
+            </div>
+
+            <div class="evento__card evento__card--featured">
+              <p class="evento__date">03 septiembre 2024 · 1:00pm</p>
+              <h3 class="evento__name">La Boda</h3>
+              <div class="evento__place">
+                <p class="evento__venue">Casa Wabi</p>
+                <p class="evento__address">Calle Lorem ipsum, Colonia, CDMX, 00000</p>
+              </div>
+              <div class="evento__actions">
+                <a href="#" class="btn btn--outline">Ver Dirección</a>
+                <a href="#" class="btn btn--ghost">Guardar en Notas</a>
+              </div>
+            </div>
+
+            <div class="evento__card">
+              <p class="evento__date">03 septiembre 2024 · 2:00pm</p>
+              <h3 class="evento__name">Tornaboda</h3>
+              <div class="evento__place">
+                <p class="evento__venue">Campolaja</p>
+                <p class="evento__address">Calle Lorem ipsum, Colonia, CDMX, 00000</p>
+              </div>
+              <div class="evento__actions">
+                <a href="#" class="btn btn--outline">Ver Dirección</a>
+                <a href="#" class="btn btn--ghost">Guardar en Notas</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="itinerario">
+            <h3 class="itinerario__title">Itinerario</h3>
+            <ul class="itinerario__list">
+              <li><span class="itinerario__time">2:00pm</span> <span>Ceremonia Espiritual</span></li>
+              <li><span class="itinerario__time">5:00pm</span> <span>Recepción y Jardín del Reconocimiento</span></li>
+              <li><span class="itinerario__time">6:00pm</span> <span>Banquete y pausa</span></li>
+              <li><span class="itinerario__time">8:00pm</span> <span>Música y brindis</span></li>
+              <li><span class="itinerario__time">10:00pm</span> <span>Cena</span></li>
+              <li><span class="itinerario__time">12:00am</span> <span>Fin del evento</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 2: HOSPEDAJE -->
+      <section class="section section--hospedaje" id="section-2">
+        <div class="parallax-bg" style="background-image: url('src/assets/hotel-bg.jpg')"></div>
+        <div class="section__overlay section__overlay--light"></div>
+        <div class="section__content animate-in">
+          <h2 class="section__title">Hospedaje</h2>
+          <p class="section__subtitle">Te sugerimos hospedarte en alguno de estos hoteles cercanos al venue.</p>
+
+          <div class="hoteles__grid">
+            <div class="hotel__card">
+              <div class="hotel__img-wrap parallax-element" data-speed="0.15">
+                <img src="src/assets/hotel1.jpg" alt="Hotel Hilton Reforma" class="hotel__img" />
+              </div>
+              <div class="hotel__info">
+                <h3 class="hotel__name">Hotel Hilton Reforma</h3>
+                <p class="hotel__address">Av. Juárez 70, Colonia Centro, Ciudad de México — 06010</p>
+                <a href="#" class="btn btn--outline">Ver Hotel</a>
+              </div>
+            </div>
+            <div class="hotel__card">
+              <div class="hotel__img-wrap parallax-element" data-speed="0.15">
+                <img src="src/assets/hotel2.jpg" alt="Hotel Emporio" class="hotel__img" />
+              </div>
+              <div class="hotel__info">
+                <h3 class="hotel__name">Hotel Emporio</h3>
+                <p class="hotel__address">Av. Juárez 70, Colonia Centro, Ciudad de México — 06010</p>
+                <a href="#" class="btn btn--outline">Ver Hotel</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="otras-opciones">
+            <p class="otras__label">Otras opciones:</p>
+            <div class="otras__links">
+              <a href="#" class="otras__link">Hotel XXXXXXX</a>
+              <a href="#" class="otras__link">Hotel XXXXXXX</a>
+              <a href="#" class="otras__link">Hotel XXXXXXX</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: MESA DE REGALOS -->
+      <section class="section section--regalos" id="section-3">
+        <div class="section__content animate-in">
+          <h2 class="section__title">Mesa de Regalos</h2>
+          <p class="section__subtitle">Su regalo más grande es su presencia. Pero si desean celebrar de otra forma, aquí algunas opciones.</p>
+
+          <div class="regalos__grid">
+            <a href="#" class="regalo__card" target="_blank">
+              <img src="src/assets/amazon.svg" alt="Amazon" class="regalo__logo" />
+            </a>
+            <a href="#" class="regalo__card" target="_blank">
+              <img src="src/assets/palacio.svg" alt="El Palacio de Hierro" class="regalo__logo" />
+            </a>
+            <a href="#" class="regalo__card" target="_blank">
+              <div class="regalo__text-logo">GAIA</div>
+            </a>
+            <a href="#" class="regalo__card regalo__card--bbva" target="_blank">
+              <div class="regalo__bbva">
+                <div class="regalo__text-logo regalo__text-logo--small">BBVA</div>
+                <div class="regalo__bank-info">
+                  <p>Nombre: Camila / Romina</p>
+                  <p>CLABE: 0000 0000 0000 0000 00</p>
+                  <p>Concepto: Boda C&R</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="contacto__block">
+            <h3 class="contacto__title">Contacta a Camila<br />o a Romina</h3>
+            <div class="contacto__links">
+              <a href="https://wa.me/521XXXXXXXXXX" class="btn btn--outline" target="_blank">Contacto por WhatsApp</a>
+              <a href="https://wa.me/521XXXXXXXXXX" class="btn btn--outline" target="_blank">Contacto por Romina</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 4: CONFIRMAR ASISTENCIA -->
+      <section class="section section--rsvp" id="section-4">
+        <div class="parallax-bg" style="background-image: url('src/assets/rsvp-bg.jpg')"></div>
+        <div class="section__overlay"></div>
+        <div class="section__content animate-in">
+          <h2 class="section__title section__title--light">Confirma tu asistencia</h2>
+
+          <div class="rsvp__wrap">
+            <div id="rsvpForm" class="rsvp__form">
+              <div class="rsvp__events">
+                <p class="rsvp__label">¿A qué eventos asistes?</p>
+                <div class="rsvp__checkboxes">
+                  <label class="rsvp__check"><input type="checkbox" name="evento" value="Rompehielos" /> Rompehielos</label>
+                  <label class="rsvp__check"><input type="checkbox" name="evento" value="Boda" /> Boda</label>
+                  <label class="rsvp__check"><input type="checkbox" name="evento" value="Tornaboda" /> Tornaboda</label>
+                </div>
+              </div>
+
+              <div class="rsvp__fields">
+                <input type="text" class="rsvp__input" placeholder="Nombre completo" id="nombre" required />
+                <input type="text" class="rsvp__input" placeholder="Teléfono" id="telefono" />
+                <input type="email" class="rsvp__input" placeholder="Email" id="email" />
+              </div>
+
+              <div class="rsvp__companions">
+                <p class="rsvp__label">¿Tienes acompañantes? *</p>
+                <div class="rsvp__radio-group">
+                  <label class="rsvp__radio"><input type="radio" name="acompanantes" value="si" /> Sí</label>
+                  <label class="rsvp__radio"><input type="radio" name="acompanantes" value="no" checked /> No</label>
+                </div>
+                <div class="rsvp__num-companions" id="numCompanionsWrap" style="display:none;">
+                  <input type="number" class="rsvp__input" placeholder="Número de acompañantes" id="numAcompanantes" min="1" max="10" />
+                </div>
+              </div>
+
+              <button class="btn btn--primary rsvp__submit" id="rsvpSubmit" onclick="submitRSVP()">Confirmar</button>
+              <p class="rsvp__note">*Tu confirmación será enviada a Camila y a Romina. Por favor confirma a más tardar el 01/08/24. Gracias, NO NIÑOS, sin excepción.</p>
+            </div>
+
+            <div id="rsvpSuccess" class="rsvp__success hidden">
+              <p class="rsvp__success-icon">♡</p>
+              <h3>¡Gracias por confirmar!</h3>
+              <p>Camila y Romina están muy emocionadas de celebrar contigo.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div><!-- end sections-wrapper -->
+
+    <!-- SECTION INDICATORS -->
+    <div class="section-indicators" id="sectionIndicators">
+      <button class="indicator active" data-section="0"></button>
+      <button class="indicator" data-section="1"></button>
+      <button class="indicator" data-section="2"></button>
+      <button class="indicator" data-section="3"></button>
+      <button class="indicator" data-section="4"></button>
+    </div>
+
+    <!-- SWIPE ARROWS (desktop) -->
+    <button class="swipe-arrow swipe-arrow--prev" id="prevBtn" onclick="goToSection(currentSection - 1)">←</button>
+    <button class="swipe-arrow swipe-arrow--next" id="nextBtn" onclick="goToSection(currentSection + 1)">→</button>
+
+  </div><!-- end main-site -->
+
+  <script src="src/components/main.js"></script>
+</body>
+</html>
